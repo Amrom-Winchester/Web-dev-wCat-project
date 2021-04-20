@@ -57,9 +57,12 @@ if( isSoption == true)
                                              //which is to added along \n - newline character
 }
 // console.log(totalContent);
+// following code shows that -b and -n are mutually exclusive i.e. cant be used together 
+// so the option which is first will get executed leaving the other one as it is without getting executed
 let isNoption = options.includes("-n");
 let isBoption = options.includes("-b");
 let finaloption;
+// condition if the options given by the user contains both -b and -n
 if(isNoption==true&&isBoption==true)
 {
     if(options.indexOf("-n")<options.indexOf("-b")){
