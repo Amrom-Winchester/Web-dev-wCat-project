@@ -18,6 +18,7 @@ for(let i = 0; i<input.length; i++ )
 console.log("options : ", options);
 console.log("filepaths : ", filePaths);
 // to check whether the given input file exists or not
+// returns the user error if even one file doesnt exist
 for ( let i = 0; i<filePaths.length; i++ )
 {
     let fileisPresent = fs.existsSync(filePaths[i]);
